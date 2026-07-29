@@ -1,5 +1,5 @@
 import streamlit as st
-import eda
+import eda 
 import inf
 
 st.set_page_config(
