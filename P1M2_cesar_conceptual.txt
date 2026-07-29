@@ -1,0 +1,37 @@
+CONCEPTUAL PROBLEMS - MILESTONE 2
+Nama : Cesar Rivaldo
+
+1. Jelaskan latar belakang adanya bagging dan cara kerja bagging!
+
+Latar belakang:
+Bagging dibuat karena model seperti Decision Tree mudah berubah hasilnya jika data latih sedikit berubah. Akibatnya, model bisa terlalu cocok dengan data training (overfitting) dan kurang baik saat digunakan pada data baru.
+
+Cara kerja:
+
+Data training dibuat menjadi beberapa sampel secara acak.
+Setiap sampel digunakan untuk melatih satu model.
+Hasil semua model kemudian digabungkan (voting untuk klasifikasi atau rata-rata untuk regresi) agar prediksi lebih stabil dan akurat.
+
+2. Jelaskan perbedaan Random Forest dengan XGBoost!
+
+Random Forest
+
+Membuat banyak Decision Tree secara bersamaan.
+Setiap tree belajar dari data yang berbeda.
+Hasil akhirnya diambil dari voting atau rata-rata semua tree.
+
+XGBoost
+
+Membuat tree satu per satu.
+Setiap tree baru bertugas memperbaiki kesalahan tree sebelumnya.
+Hasil akhirnya merupakan gabungan dari semua tree yang sudah diperbaiki bertahap.
+
+Perbedaan utama:
+Random Forest bekerja bersamaan (paralel), sedangkan XGBoost bekerja bertahap (berurutan).
+
+3. Jelaskan apa yang dimaksud dengan Cross Validation!
+
+Cross Validation adalah cara mengecek performa model dengan membagi data menjadi beberapa bagian. Model akan dilatih dan diuji beberapa kali menggunakan bagian data yang berbeda, lalu hasilnya dirata-ratakan.
+
+Tujuannya agar hasil evaluasi lebih akurat, model tidak mudah overfitting, dan kita bisa membandingkan beberapa model dengan lebih adil. Pada proyek ini digunakan Stratified K-Fold, sehingga jumlah data churn dan tidak churn tetap seimbang di setiap pembagian data.
+
