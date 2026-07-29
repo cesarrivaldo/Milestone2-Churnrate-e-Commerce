@@ -1,3 +1,3 @@
 URL Dataset    : https://www.kaggle.com/datasets/ankitverma2010/ecommerce-customer-churn-analysis-and-prediction
-URL Model      : 
+URL Model      : https://drive.google.com/file/d/1tv32uJIhcKPDNbY6pTrSu8-auN_FqRmH/view?usp=sharing
 URL Deployment : 
